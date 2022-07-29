@@ -1,0 +1,1 @@
+{"version":3,"file":"departament.schema.js","sourceRoot":"","sources":["../../src/validations/departament.schema.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,yCAA2B;AAEd,QAAA,iBAAiB,GAAG,GAAG;KACjC,MAAM,EAAE;KACR,KAAK,CAAC;IACL,IAAI,EAAE,GAAG;SACN,MAAM,EAAE;SACR,QAAQ,CAAC,kBAAkB,CAAC;SAC5B,GAAG,CAAC,GAAG,EAAE,2BAA2B,CAAC;CACzC,CAAC;KACD,SAAS,CAAC,IAAI,CAAC,CAAC"}
