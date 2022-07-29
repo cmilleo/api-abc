@@ -1,5 +1,6 @@
 import app from "./app";
 import AppDataSource from "./data-source";
+import "dotenv/config";
 
 const InitConnection = async () => {
   await AppDataSource.initialize()
@@ -10,7 +11,7 @@ const InitConnection = async () => {
       console.error("Error during Data Source initialization", err);
     });
 
-  app.listen(3000, () => {
+  app.listen(process.env.port || 3000, () => {
     console.log("Server is running");
   });
 };

@@ -4,15 +4,15 @@ import { DataSource } from "typeorm";
 
 const AppDataSource = new DataSource({
   type: "postgres",
-  host: process.env.TYPEORM_HOST,
-  port: 5432,
-  username: process.env.TYPEORM_USERNAME,
-  password: process.env.TYPEORM_PASSWORD,
-  database: process.env.TYPEORM_DATABASE,
+  url: process.env.DATABASE_URL,
   logging: false,
   synchronize: false,
-  entities: ["src/entities/*.ts", "src/entities/views/*.ts"],
-  migrations: ["src/migrations/*.ts"],
+  ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
+  entities:
+    process.env.NODE_ENV === "production"
+      ? ["dir/src/entities/*.js", "dir/src/entities/views/*.js"]
+      : ["src/entities/*.ts", "/src/entities/views/*.js"],
+  migrations: process.env.NODE_ENV === "production" ? ["dir/src/migrations/*.js"] : ["src/migrations/*.ts"],
 });
 
 export default AppDataSource;
