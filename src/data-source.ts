@@ -11,9 +11,9 @@ const AppDataSource = new DataSource({
   ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
   entities:
     process.env.NODE_ENV === "production"
-      ? ["build/src/entities/*.js", "build/src/entities/views/*.js"]
+      ? ["build/entities/*.js", "build/entities/views/*.js"]
       : ["src/entities/*.ts", "/src/entities/views/*.ts"],
-  migrations: process.env.NODE_ENV === "production" ? ["build/src/migrations/*.js"] : ["src/migrations/*.ts"],
+  migrations: process.env.NODE_ENV === "production" ? ["build/migrations/*.js"] : ["src/migrations/*.ts"],
 });
 
 export default AppDataSource;
