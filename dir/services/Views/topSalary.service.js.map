@@ -1,1 +1,0 @@
-{"version":3,"file":"topSalary.service.js","sourceRoot":"","sources":["../../../src/services/Views/topSalary.service.ts"],"names":[],"mappings":";;;;;AAAA,oEAA8C;AAE9C,4EAAsE;AAGtE,MAAM,YAAY,GAAG,KAAK,IAAmC,EAAE;IAC7D,MAAM,SAAS,GAAG,qBAAa,CAAC,aAAa,CAAC,gCAAa,CAAC,CAAC;IAC7D,OAAO,MAAM,SAAS,CAAC,IAAI,EAAE,CAAC;AAChC,CAAC,CAAC;AAEF,kBAAe,YAAY,CAAC"}

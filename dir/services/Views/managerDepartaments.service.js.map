@@ -1,1 +1,0 @@
-{"version":3,"file":"managerDepartaments.service.js","sourceRoot":"","sources":["../../../src/services/Views/managerDepartaments.service.ts"],"names":[],"mappings":";;;;;AAAA,oEAA8C;AAC9C,gGAA0F;AAG1F,MAAM,6BAA6B,GAAG,KAAK,IAEzC,EAAE;IACF,MAAM,mBAAmB,GAAG,qBAAa,CAAC,aAAa,CACrD,oDAAuB,CACxB,CAAC;IACF,OAAO,MAAM,mBAAmB,CAAC,IAAI,EAAE,CAAC;AAC1C,CAAC,CAAC;AAEF,kBAAe,6BAA6B,CAAC"}
